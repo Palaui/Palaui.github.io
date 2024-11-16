@@ -31,12 +31,12 @@ body {
 }
 
 .background-to-alternate-gradient {
-  padding-top: 25px;
+  padding-top: 15px;
   background: linear-gradient(180deg, var(--background-color) 0%, var(--background-alternate-color) 100%);
 }
 
 .alternate-to-background-gradient {
-  padding-top: 25px;
+  padding-top: 15px;
   background: linear-gradient(0deg, var(--background-color) 0%, var(--background-alternate-color) 100%);
 }
 
