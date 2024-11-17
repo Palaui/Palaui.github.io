@@ -1,4 +1,4 @@
-/* Reset default styles */
+/* Variables */
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
   /* Colors */
   --background-color: #1e1e1e;
   --background-alternate-color: #2d2d2d;
+  --background-extra-alternate-color: #3c3c3c;
   --text-color: #e1e1e1;
   --first-alt-color: #b3e1ff;
   --second-alt-color: #fbffb3;
@@ -30,6 +31,7 @@ body {
   letter-spacing: 0.01em;
 }
 
+/* Classes */
 .background-to-alternate-gradient {
   padding-top: 15px;
   background: linear-gradient(180deg, var(--background-color) 0%, var(--background-alternate-color) 100%);
@@ -38,6 +40,47 @@ body {
 .alternate-to-background-gradient {
   padding-top: 15px;
   background: linear-gradient(0deg, var(--background-color) 0%, var(--background-alternate-color) 100%);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  background-color: var(--background-color);
+  color: white;
+}
+
+.header-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav-button {
+  text-decoration: none;
+  padding: 5px 20px;
+  background-color: var(--background-alternate-color);
+  color: var(--text-color);
+  border-radius: 20px;
+}
+
+.header-nav-button:hover {
+  text-decoration: none;
+  padding: 5px 20px;
+  background-color: var(--background-extra-alternate-color);
+  color: var(--text-color);
+  border-radius: 30px;
+}
+
+/* Sections */
+#photo {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .photo-text-section {
