@@ -124,7 +124,7 @@ header {
   font-size: 16px;
 }
 
-#about {
+#contact {
   background-color: var(--background-alternate-color);
   text-align: center;
 }
@@ -136,6 +136,11 @@ header {
   justify-content: center;
   text-align: center;
   background-color: var(--background-alternate-color);
+}
+
+#projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #gallery {
@@ -151,6 +156,12 @@ header {
 }
 
 .screenshot img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+.screenshot iframe {
   width: 100%;
   height: auto;
   border: 1px solid #ddd;
@@ -172,6 +183,11 @@ header {
 }
 
 #screenshot-container img {
+  max-width: 80%;
+  object-fit: contain;
+}
+
+#screenshot-container iframe {
   max-width: 80%;
   object-fit: contain;
 }
